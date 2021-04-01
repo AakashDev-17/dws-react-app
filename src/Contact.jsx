@@ -16,27 +16,27 @@ const Contact = () => {
                      </div>
                      <div className="col-md-6 contactFormBox">
                         <form className="p-5">
-                        <div class="mb-3">
-                              <label for="Name" class="form-label">Name</label>
-                              <input type="text" class="form-control" id="Name" />
+                           <div className="mb-3">
+                              <label htmlFor="Name" className="form-label">Name</label>
+                              <input type="text" className="form-control" id="Name" />
                            </div>
-                           <div class="mb-3">
-                              <label for="PhoneNo" class="form-label">Phone No.</label>
-                              <input type="number" class="form-control" id="PhoneNo" />
+                           <div className="mb-3">
+                              <label htmlFor="PhoneNo" className="form-label">Phone No.</label>
+                              <input type="number" className="form-control" id="PhoneNo" />
                            </div>
-                           <div class="mb-3">
-                              <label for="Email" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" />
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                           <div className="mb-3">
+                              <label htmlFor="Email" className="form-label">Email address</label>
+                              <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" />
+                              <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                            </div>
-                           <div class="mb-3">
+                           <div className="mb-3">
                               <textarea rows="4" className="form-control" placeholder="Type your message...."></textarea>
                            </div>
-                           <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1" onClick={()=>setChecked(!checked)} checked={checked} />
-                              <label class="form-check-label" for="exampleCheck1">Confirm your details!</label>
+                           <div className="mb-3 form-check">
+                              <input type="checkbox" className="form-check-input" id="exampleCheck1" onClick={() => setChecked(!checked)} checked={checked} />
+                              <label className="form-check-label" htmlFor="exampleCheck1">Confirm your details!</label>
                            </div>
-                           <button type="submit" class="btn btn-primary" disabled={!checked}>Submit</button>
+                           <button type="submit" className="btn btn-primary" disabled={!checked}>Submit</button>
                         </form>
                      </div>
                   </div>

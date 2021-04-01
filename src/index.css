@@ -1,193 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
-
-*{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-family: 'Mulish', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
-   height: 100vh;
-   width: 100vw;
-   overflow-x: hidden;
-   padding-top: 4rem;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  padding-top: 4rem;
 }
 
 .navrow {
-   background: #fff !important;
-   position: fixed;
-   width: 100vw !important;
-   top: 0px;
-   right: 12px;
-   box-shadow: 0px 3px 7px rgba(0,0,0,0.2) !important;
-   z-index: 99;
+  background: #fff !important;
+  position: fixed;
+  width: 100vw !important;
+  top: 0px;
+  right: 12px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2) !important;
+  z-index: 99;
 }
 
 .navbar {
-   background-color: #fff !important;
+  background-color: #fff !important;
 }
 
 .navbar-brand {
-   font-size: 1.9rem !important;
-   color: #565387 !important;
+  font-size: 1.9rem !important;
+  color: #565387 !important;
 }
 
 .navbar a {
-   font-size: 1.3rem;
-   text-transform: capitalize;
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
 .menu_active {
-   font-weight: bold;
-   border-bottom: 1px solid #565387;
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
 }
 
 .navbar a:hover {
-   color: #3498db !important;
+  color: #3498db !important;
 }
 
 @media (max-width: 991px) {
-   .navbar-brand {
-      font-size: 1.6rem !important;
-   }
+  .navbar-brand {
+    font-size: 1.6rem !important;
+  }
 
-   .menu_active {
-      font-weight: bold;
-      border-bottom: none;
-   }
+  .menu_active {
+    font-weight: bold;
+    border-bottom: none;
+  }
 }
 
-
 .homeSection {
-   position: relative;
-   height: calc(100vh - 66px);
-   overflow: hidden;
-   background-image: url('./images/backgroundImg.png');
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+  position: relative;
+  height: calc(100vh - 66px);
+  overflow: hidden;
+  background-image: url("./images/backgroundImg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #header {
-   width: 100%;
+  width: 100%;
 }
 
 #header h1 {
-   margin: 0 0 10px 0;
-   font-size: 48px;
-   font-weight: 700;
-   color: black;
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
 }
 
 #header .brand-name {
-   color: #3498db;
+  color: #3498db;
 }
 
 #header h2 {
-   color: #484848;
-   font-size: 24px;
+  color: #484848;
+  font-size: 24px;
 }
 
 #header .btn-get-started {
-   font-weight: 500;
-   font-size: 16px;
-   letter-spacing: 1px;
-   display: inline-block;
-   padding: 10px 30px;
-   border-radius: 50px;
-   transition: 0.3s;
-   color: #3498db;
-   border: 3px solid #3498db;
-   text-decoration: none;
-   font-weight: bold;
-   backdrop-filter: blur(30px);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #3498db;
+  border: 3px solid #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  backdrop-filter: blur(30px);
 }
 
 #header .btn-get-started:hover {
-   background: #3498db;
-   color: #fff;
+  background: #3498db;
+  color: #fff;
 }
 
 .header-img {
-   text-align: right;
+  text-align: right;
 }
 
 #header .animated {
-   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @-webkit-keyframes up-down {
-   0%{
-      transform: translateY(10px);
-   }
-   100% {
-      transform: translateY(-10px);
-   }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes up-down {
-   0% {
-      transform: translateY(10px);
-   }
-   100% {
-      transform: translateY(-10px);
-   }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
-
 
 /* ============ card ========== */
 
 .card {
-   border-radius: 2rem;
-   overflow: hidden;
-   box-shadow: 0px 2px 10px rgba(0,0,0,0.19);
-   cursor: pointer;
-   transition: all 1s ease;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: all 1s ease;
 }
 .card:hover {
-   transform: scale(0.95);
-}
-
-
-/* =========== service ========= */
-
-.serviceBox {
-   margin-top: 4px;
-   height: calc(100vh - 70px);
-   overflow-y: scroll;
+  transform: scale(0.95);
 }
 
 /* =========== contact box ========= */
 
 .contactBox {
-   width: 100vw;
-   height: 90vh;
-   padding-bottom: 2rem;
+  width: 100vw;
 }
 
 .contactBox,
 .contactBox .contactImgBox {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactBox .row {
-   width: 100% !important;
-   height: max-content;
+  width: 100% !important;
+  height: max-content;
 }
 
 .contactImgBox img {
-   margin-top: 4rem;
-   width: 80%;
-   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  margin-top: 2rem;
+  width: 80%;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 .contactFormBox form {
-   border-radius: 2rem;
-   box-shadow: 3px 5px 12px rgba(0,0,0,0.2);
-   margin-top: 1rem;
+  border-radius: 2rem;
+  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*=============== Footer =============*/
+
+footer p {
+  margin: 0px 0px 0px 0px;
+}
+
+footer i {
+  color: red;
 }

@@ -4,6 +4,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Service from "./Service";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route exact path="/service" component={Service} />
             <Redirect to="/" />
          </Switch>
+         <Footer />
       </>
    )
 }
