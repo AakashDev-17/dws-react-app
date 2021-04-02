@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 
 const Card = ({ content }) => {
    return (
@@ -10,7 +9,7 @@ const Card = ({ content }) => {
                <div className="card-body">
                   <h5 className="card-title">{content.title}</h5>
                   <p className="card-text">{content.content}</p>
-                  <NavLink to={content.link} className="btn btn-primary" target="_blank"> Explore </NavLink>
+                  <a href={content.link} className="btn btn-primary" rel="noopener noreferrer" target="_blank"> Explore </a>
                </div>
             </div>
          </div>
